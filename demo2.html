@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>LocalStorage DEMO</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no，minimum-scale=1,maximum-scale=1">
+</head>
+
+<body>
+    <form id="myform" action="">
+        <input id="name" name="nameinput" type="text" value="" />
+        <br>
+        <br>
+        <br>
+        <input id="password" name="pwdinput" type="password" value="" />
+        <br>
+        <br>
+        <br>
+        <input type="checkbox" name="checkinput" id="checkvalue1" value="checkvalue1" />
+        <label for="checkvalue1">checkvalue1</label>
+        <input type="checkbox" name="checkinput" id="checkvalue2" value="checkvalue2" />
+        <label for="checkvalue2">checkvalue2</label>
+        <input type="checkbox" name="checkinput" id="checkvalue3" value="checkvalue3" />
+        <label for="checkvalue3">checkvalue3</label>
+        <input type="checkbox" name="checkinput" id="checkvalue4" value="checkvalue4" />
+        <label for="checkvalue4">checkvalue4</label>
+        <br>
+        <br>
+        <br>
+        <input type="radio" name="radioinput" id="aaa" value="radiovalue1" />
+        <label for="aaa">radiovalue1</label>
+        <input type="radio" name="radioinput" id="bbb" value="radiovalue2" />
+        <label for="bbb">radiovalue2</label>
+        <br>
+        <br>
+        <br>
+        <select name="selectoptions" id="select1">
+            <option value="option0">option0</option>
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+            <option value="option3">option3</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <textarea name="area" id="area" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <button type="button" id="refresh">Refresh Page</button>
+        <button type="button" id="clearStorage">Clear LocalStorage</button>
+    </form>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+    <script type="text/javascript" src="jQueryZeptoLocalStorage.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('#myform').initLocalStorage({
+            debug: true
+        });
+
+        $('#clearStorage').on('click', function() {
+            removeLocalStorage();
+            location.reload();
+        });
+
+        $('#refresh').on('click', function() {
+            location.reload();
+        });
+    });
+    </script>
+</body>
+
+</html>
