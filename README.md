@@ -2,7 +2,7 @@
 页面暂存JS库，极简的一句话，即可给你的表单赋予暂存功能
 
 # Home Page
-http://leochan2017.github.io/jQueryZeptoLocalStorage
+https://github.com/leochan2017/jQueryZeptoLocalStorage
 
 # Started
 1. 引入jQuery 或者 zepto
