@@ -133,7 +133,7 @@
 
         this.ready(function() {
             loadLocalStorage(); // when form load success then get localStorage data
-            saveLocalStorage(); // add listen on the form when evens is active then update the localStorage data
+            saveLocalStorage(); // add listen on the form when events is active then update the localStorage data
         });
 
         return this;
